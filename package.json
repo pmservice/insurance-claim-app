@@ -11,10 +11,6 @@
     "prod": "cross-env npm run clean && npm run build:client && npm run build:server",
     "build:client": " webpack --config webpack.production.config.js --progress --profile --colors",
     "build:server": " webpack --config webpack.server.production.config.js --progress --profile --colors",
-    "lint": "eslint ./app/**/**.js",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "coverage": "jest --coverage",
     "deploy": "cf push claim-insurance-app"
   },
   "author": "Eren Dabanlioglu",
