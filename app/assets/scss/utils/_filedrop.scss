@@ -1,0 +1,36 @@
+.icon{
+  width: 16px;
+  height: 16px;
+  vertical-align: bottom;
+  margin-right: 10px;
+}
+
+#drop-area {
+  border: 2px dashed $color-blue-light;
+  border-radius: 4px;
+  font-family: sans-serif;
+  margin-top: 2rem;
+  padding: 3rem;
+  text-align: center;
+}
+#drop-area.highlight {
+  border-color: purple;
+}
+p {
+  margin-top: 0;
+}
+#fileElem {
+  display: none;
+}
+#list{
+  margin: 1rem;
+  div {
+    margin-bottom: 1rem;
+  }
+}
+
+.dropHover{
+  border: 2px solid $color-blue-light !important;
+  box-shadow: 0 12px 24px 0 rgba(0,0,0,0.10);
+  background: $ui-02;
+}

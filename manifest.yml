@@ -1,0 +1,4 @@
+applications:
+- name:    claim-insurance-app
+  memory:  256M
+  random-route: true

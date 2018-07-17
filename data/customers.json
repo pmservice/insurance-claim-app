@@ -1,0 +1,11 @@
+{
+  "21868593" : {
+    "id": "21868593",
+    "age": "32",
+    "name": "Jane Doe",
+    "password": "0000",
+    "gender": "Female",
+    "policies":["1234567"],
+    "total_policy_claims": "1"
+  }
+}

@@ -1,0 +1,10 @@
+export const config = {
+  port: {
+    http: '3000',
+    https: '8080',
+  },
+  urls: {
+    apiUrl: '',
+    caseManagerPath: '',
+  },
+};

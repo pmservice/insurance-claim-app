@@ -1,0 +1,14 @@
+{
+  "1234567" : {
+    "customer_id" : "21868593",
+    "area": "Auto",
+    "policy_claims": "1",
+    "vehicle" : {
+      "id": "BMWX3SUV2012",
+      "brand": "BMW",
+      "model": "X3",
+      "type": "SUV",
+      "year": "2012"
+    }
+  }
+}

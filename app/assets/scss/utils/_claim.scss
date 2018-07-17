@@ -1,0 +1,96 @@
+.claim-info{
+  top: 2rem;
+  margin: 0 3rem 0 3rem;
+  padding-top: 18rem;
+}
+
+.claim-form {
+  padding-right: 10rem;
+  margin-top: 2rem;
+  display: inline-block;
+
+  .bx--form-item{
+    margin-bottom: 2rem;
+  }
+
+  .bx--label{
+    color: $color-blue-dark;
+    font-weight: 400;
+  }
+
+  .bx--text-input, .bx--text-area, .bx--select-input{
+    //box-shadow: 0 1px 0 0 $color-blue-dark;
+    -ms-flex-order: 2;
+  }
+
+  .bx--date-picker__input, .bx--select-input{
+    min-width: 300px;
+  }
+
+  .bx--text-input, .bx--text-area, .bx--dropdown {
+    width: 300px;
+  }
+}
+
+
+.claim-policy-info{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 2rem;
+  display: inline-block;
+
+  .bx--structured-list-td{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.claim-files{
+  width: 30%;
+  height: 50%;
+  position: fixed;
+  top: 19rem;
+  right: 0;
+  padding: 0 3rem 3rem 3rem;
+  border-left: 1px solid $color-blue-light;
+  z-index: 2;
+}
+
+
+@media (max-width: 1400px) {
+
+  .claim-form {
+    padding-right: 3rem;
+    margin-top: 2rem;
+  }
+
+  .claim-files{
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .claim-form {
+    padding-right: 3rem;
+    margin-top: 2rem;
+  }
+  .claim-files{
+    width: 100%;
+    position: static;
+    padding: 1rem 0 1rem 0;
+    border: none;
+  }
+}
+
+.empty-info{
+  text-align: center;
+  padding-top:2rem
+}
+
+.fixed{
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+}
+
