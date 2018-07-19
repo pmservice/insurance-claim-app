@@ -1,14 +1,23 @@
 {
   "1234567" : {
+    "id": "1234567",
     "customer_id" : "21868593",
     "area": "Auto",
     "policy_claims": "1",
     "vehicle" : {
       "id": "BMWX3SUV2012",
+      "category": "SUV",
+      "state_of_registration": "Texas",
+      "licence_no": "9999",
       "brand": "BMW",
       "model": "X3",
       "type": "SUV",
       "year": "2012"
-    }
+    },
+    "start_date": "06/01/2017",
+    "end_date": "06/01/2018",
+    "status": "Active",
+    "agent": "Rhonda P. Howard",
+    "coverage": "Full"
   }
 }

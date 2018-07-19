@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node server.js",
     "build": "npm run prod",
-    "dev": "webpack-dev-server",
+    "build:dev": "webpack --config webpack.config.js --progress --profile --colors &&  webpack --config webpack.server.config.js --progress --profile --colors",
+    "dev": "npm run build:dev && npm start",
+    "webpack-dev": "webpack-dev-server",
     "clean": "rimraf dist",
     "prod": "cross-env npm run clean && npm run build:client && npm run build:server",
     "build:client": " webpack --config webpack.production.config.js --progress --profile --colors",
@@ -78,6 +80,7 @@
     "node-sass": "4.9.2",
     "open-browser-webpack-plugin": "0.0.5",
     "react-addons-test-utils": "15.6.2",
+    "react-dropzone": "^4.2.13",
     "react-test-renderer": "16.4.1",
     "rimraf": "2.6.2",
     "sass-loader": "6.0.7",

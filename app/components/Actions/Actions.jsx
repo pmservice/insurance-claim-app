@@ -45,7 +45,7 @@ export default class Actions extends React.Component {
               File Claim
             </Button>
           </Link>
-          <Link to={`/policies/${this.state.policyNo}`}>
+          <Link to={`/policy/${this.state.policyNo}`}>
             <Button kind="secondary" disabled={!this.state.policyNo}>
               Manage Policy
             </Button>

@@ -1,5 +1,5 @@
 $css--font-face: true;
-$font-path: 'https://unpkg.com/carbon-components@8.0.0/src/globals/fonts/';
+//$font-path: 'https://unpkg.com/carbon-components@8.0.0/src/globals/fonts/';
 
 @import '../../../node_modules/carbon-components/scss/globals/scss/styles';
 @import 'utils/temp';
@@ -55,7 +55,7 @@ html, body, .bx--body{
   background: linear-gradient(to top, $color-blue-light, $color-blue-dark);
   color: white;
 
-  a {
+  a, span {
     color: white;
   }
 
@@ -63,6 +63,10 @@ html, body, .bx--body{
     a {
       color: black;
     }
+  }
+
+  .bx--tabs{
+    bottom: -1.2rem;
   }
 
   .policyInfoContainer >a {

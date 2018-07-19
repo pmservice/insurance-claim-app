@@ -17,6 +17,7 @@
     "space-before-function-paren": "off",
     "react/prefer-stateless-function": "warn",
     "react/jsx-one-expression-per-line": "off",
+    "max-len": [1, 200, 4],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "jsx-a11y/label-has-for": [ 2, {
       "components": [ "Label" ],
