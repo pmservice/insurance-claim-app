@@ -8,6 +8,7 @@ export default class Actions extends React.Component {
     super();
     this.state = {
       policyNo: '',
+      claimNo: '',
     };
   }
 
@@ -16,16 +17,6 @@ export default class Actions extends React.Component {
       <div>
         <div id="input-container" className="inputContainer">
           <div className="bx--row">
-            {/* <div className="bx--col-xs-12 bx--col-md-3"> */}
-            {/* <div className="bx--form-item"> */}
-            {/* <TextInput */}
-            {/* id="nameInput" */}
-            {/* labelText="Your Name" */}
-            {/* onChange={evt => this.setState({ name: evt.target.value })} */}
-            {/* value={this.state.name} */}
-            {/* /> */}
-            {/* </div> */}
-            {/* </div> */}
             <div className="bx--col-xs-12 bx--col-md-3">
               <div className="bx--form-item">
                 <TextInput
@@ -33,6 +24,18 @@ export default class Actions extends React.Component {
                   labelText="Policy Number"
                   onChange={evt => this.setState({ policyNo: evt.target.value })}
                   value={this.state.policyNo}
+                  disabled={this.state.claimNo}
+                />
+              </div>
+            </div>
+            <div className="bx--col-xs-12 bx--col-md-3">
+              <div className="bx--form-item">
+                <TextInput
+                  id="claimnput"
+                  labelText="Claim Number"
+                  onChange={evt => this.setState({ claimNo: evt.target.value })}
+                  value={this.state.claimNo}
+                  disabled={this.state.policyNo}
                 />
               </div>
             </div>
@@ -48,6 +51,13 @@ export default class Actions extends React.Component {
           <Link to={`/policy/${this.state.policyNo}`}>
             <Button kind="secondary" disabled={!this.state.policyNo}>
               Manage Policy
+            </Button>
+          </Link>
+
+
+          <Link to={`/claim/${this.state.claimNo}`}>
+            <Button kind="secondary" disabled={!this.state.claimNo}>
+              Manage Claim
             </Button>
           </Link>
         </div>
