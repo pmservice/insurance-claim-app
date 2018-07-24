@@ -60,7 +60,7 @@ npm-debug.log
 /coverage
 
 # config
-config/config.js
+/config/config.js
 
 log
 .idea
