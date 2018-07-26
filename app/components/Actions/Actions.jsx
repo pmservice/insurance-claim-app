@@ -15,58 +15,50 @@ export default class Actions extends React.Component {
   render() {
     return (
       <div>
-        <div id="input-container" className="inputContainer">
+        <div id="input-container" className="inputContainer actionContainer">
           <div className="bx--row">
             <div className="bx--col-xs-12 bx--col-md-3">
               <div className="bx--form-item">
                 <TextInput
                   id="policyInput"
-                  labelText="Policy Number"
+                  labelText="Manage Your Policy"
+                  placeholder="Policy Number"
                   onChange={evt => this.setState({ policyNo: evt.target.value })}
                   value={this.state.policyNo}
                   disabled={this.state.claimNo}
                 />
               </div>
+              <Link to={`/newClaim/${this.state.policyNo}`}>
+                <Button kind="primary" disabled={!this.state.policyNo}>
+                  File Claim
+                </Button>
+              </Link>
+              <Link to={`/policy/${this.state.policyNo}`}>
+                <Button kind="secondary" disabled={!this.state.policyNo}>
+                  Go to Details
+                </Button>
+              </Link>
             </div>
             <div className="bx--col-xs-12 bx--col-md-3">
               <div className="bx--form-item">
                 <TextInput
                   id="claimnput"
-                  labelText="Claim Number"
+                  labelText="Manage Your Claim"
+                  placeholder="Claim Number"
                   onChange={evt => this.setState({ claimNo: evt.target.value })}
                   value={this.state.claimNo}
                   disabled={this.state.policyNo}
                 />
               </div>
+              <Link to={`/claim/${this.state.claimNo}`}>
+                <Button kind="secondary" disabled={!this.state.claimNo}>
+                  Go to Details
+                </Button>
+              </Link>
             </div>
           </div>
-        </div>
-
-        <div className="actionContainer">
-          <Link to={`/newClaim/${this.state.policyNo}`}>
-            <Button kind="primary" disabled={!this.state.policyNo}>
-              File Claim
-            </Button>
-          </Link>
-          <Link to={`/policy/${this.state.policyNo}`}>
-            <Button kind="secondary" disabled={!this.state.policyNo}>
-              Manage Policy
-            </Button>
-          </Link>
-
-
-          <Link to={`/claim/${this.state.claimNo}`}>
-            <Button kind="secondary" disabled={!this.state.claimNo}>
-              Manage Claim
-            </Button>
-          </Link>
         </div>
       </div>
     );
   }
 }
-//
-// Actions.propTypes = {
-//   makeClaimHandler: PropTypes.func.isRequired,
-//   managePolicyHandler: PropTypes.func.isRequired,
-// };

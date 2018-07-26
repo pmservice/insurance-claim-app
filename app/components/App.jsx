@@ -14,7 +14,7 @@ export default class App extends React.Component {
 
     return (
       <div>
-        <div className="container intro">
+        <div className="container intro" style={{ paddingBottom: 0 }}>
           <Header title={title} />
           <Actions />
         </div>

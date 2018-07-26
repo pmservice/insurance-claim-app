@@ -30,7 +30,7 @@ const config = {
     new webpack.optimize.UglifyJsPlugin({
       beautify: false,
     }),
-    new webpack.DefinePlugin({ 'process.env': { NODE_ENV: JSON.stringify('production') }, 'process.env.PORT': 8080 }),
+    new webpack.DefinePlugin({ 'process.env': { NODE_ENV: JSON.stringify('production') }, 'process.env.PORT': 80 }),
   ],
 
   resolve: {

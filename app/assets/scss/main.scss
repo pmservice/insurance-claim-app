@@ -102,12 +102,18 @@ html, body, .bx--body{
 }
 
 .inputContainer .bx--form-item{
-  margin-bottom: 1em;
-  margin-right: 0.5em;
+  margin-bottom: 0.5rem;
+  padding-right: 1rem;
   width: 100%;
 }
 
 .actionContainer {
+  div{
+    min-width: 20rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .bx--btn--primary {
     color: $color-blue-light;
     background-color: white;
@@ -130,13 +136,11 @@ html, body, .bx--body{
 }
 
 .info, .policy-info, .claim-info  {
-  margin-bottom: 3rem;
-
   .box {
     border-right: 1px solid $color-blue-light;
-    min-height: 21rem;
+    min-height: 19rem;
     background: white;
-    padding: 3rem;
+    padding: 0 3rem 3rem 3rem;
 
     button {
       position: absolute;
